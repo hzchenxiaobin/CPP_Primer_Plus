@@ -1,19 +1,24 @@
 #ifndef __STACK_H__
-#define ___STACK_H__
+#define __STACK_H__
 
 typedef unsigned long Item;
 
-class stack
+class Stack
 {
 private:
-    enum {MAX = 10};
+    enum
+    {
+        MAX = 10
+    };
     Item items[MAX];
     int top;
+
 public:
-    stack();
-    ~stack();
+    Stack();
+    bool isempty() const;
+    bool isfull() const;
+    bool push(Item &item);
+    bool pop(Item &item);
 };
-
-
 
 #endif
