@@ -16,6 +16,11 @@ Stock::Stock(const std::string &co, long n, double pr)
     set_tot();
 }
 
+Stock::~Stock()
+{
+    std::cout << "Bye " << company << "\n";
+}
+
 void Stock::buy(long num, double price)
 {
     using std::cout;
@@ -59,7 +64,7 @@ void Stock::update(double price)
     set_tot();
 }
 
-void Stock::show()
+void Stock::show() const
 {
     std::cout << "Company: " << company
               << " Shares: " << shares << '\n'

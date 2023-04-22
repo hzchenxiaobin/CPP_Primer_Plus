@@ -14,10 +14,11 @@ private:
 
 public:
     Stock(const std::string &co = "Error", long n = 0, double pr = 0.0);
+    ~Stock();
     void buy(long num, double pr);
     void sell(long num, double price);
     void update(double price);
-    void show();
+    void show() const;
 };
 
 #endif
