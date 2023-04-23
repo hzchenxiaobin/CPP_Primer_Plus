@@ -10,6 +10,7 @@ private:
 public:
     Num();
     Num(int m);
+    void operator=(int l);
 };
 
 Num::Num()
@@ -22,6 +23,12 @@ Num::Num(int m)
 {
     n = m;
     cout << "self definition constructor" << endl;
+}
+
+void Num::operator=(int l)
+{
+    n = l;
+    cout << "operator=";
 }
 
 int main()
