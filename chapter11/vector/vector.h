@@ -31,7 +31,6 @@ namespace VECTOR
         Vector();
         Vector(double n1, double n2, Mode form = RECT);
         void reset(double n1, double n2, Mode form = RECT);
-        ~Vector();
         double xval() const {return x;};
         double yval() const {return y;};
         double magval() const {return mag;};
