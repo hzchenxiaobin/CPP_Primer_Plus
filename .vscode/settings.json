@@ -67,7 +67,8 @@
         "__functional_03": "cpp",
         "memory_resource": "cpp",
         "filesystem": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "list": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
